@@ -6,3 +6,4 @@ export { default as About } from "./Components/About/About";
 export { default as User } from "./Components/User/User";
 export { default as Github } from "./Components/Github/Github";
 export { default as Login } from "./Components/Login/Login";
+export { default as Signup } from "./Components/Signup/Signup";

@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, createRoutesFromElements, RouterProvider , Route } from 'react-router-dom'
 import Direction from './Route'
-import {Home , About , Contact , User , Github , Login} from "./index.js"
+import {Home , About , Contact , User , Github , Login , Signup} from "./index.js"
 
 // const router = createBrowserRouter([
 //   {
@@ -33,6 +33,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="login" element={<Login />} />
+      <Route path="signup" element={<Signup />} />
       <Route path="github" element={<Github />} />
       <Route path="user/:id" element={<User />} />
     </Route>

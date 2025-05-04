@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -17,21 +17,23 @@ export default function Login() {
             placeholder="Password"
             className="p-2 border-2 border-gray-400 rounded-xl outline-none shadow-[5px_5px_0px_2px_rgba(0,0,0,0.3)]"
           />
-          <NavLink className={`text-left ml-1 hover:underline`}>Forget Password?</NavLink>
-          <NavLink className={`text-left ml-1 hover:underline`}>Forget Email?</NavLink>
+          <Link className={`text-left underline`}>Forget Password?</Link>
+          <Link className={`text-left underline`}>Forget Email?</Link>
         <div className="lg:flex-col">
         <button
          type="submit"
          className="w-60 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-xl hover:bg-orange-600 transition ease-in-out duration-300 cursor-pointer mb-3 text-lg"
          >
          Login 
-         </button>
-        <button
-         type="submit"
-         className="w-60 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-xl hover:bg-orange-600 transition ease-in-out duration-300 cursor-pointer text-lg"
-         >
-         SignUp 
-         </button>
+        </button>
+        <Link to="/signup">
+  <button
+    type="button"
+    className="w-60 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-xl hover:bg-orange-600 transition ease-in-out duration-300 cursor-pointer text-lg"
+  >
+    SignUp
+  </button>
+</Link>
         </div>
         </form>
       </div>
