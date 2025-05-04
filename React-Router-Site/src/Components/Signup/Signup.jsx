@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Login() {
   return (
     <div className="flex items-center justify-center">
-      <div className="w-72 md:w-120 h-150 md:h-105 mb-10 rounded-xl p-4 text-center font-bold text-2xl shadow-[0px_4px_10px_10px_rgba(0,0,0,0.3)] mt-5">
+      <div className="w-72 md:w-120 h-155 md:h-105 mb-10 rounded-xl p-4 text-center font-bold text-2xl shadow-[0px_4px_10px_10px_rgba(0,0,0,0.3)] mt-5">
         <h2 className="mb-4">Sign-up Here!</h2>
         <form className="flex flex-col md:flex-row gap-4 text-base font-normal md:flex-wrap justify-center">
           <input
